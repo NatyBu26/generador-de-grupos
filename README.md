@@ -2,6 +2,8 @@
 
 Aplicación web simple para formar grupos aleatorios de estudiantes a partir de una lista de nombres y una cantidad de integrantes indicada por el usuario.
 
+🔗 [Ver aplicación online](https://generador-de-grupos.vercel.app/)
+
 ## Descripción
 
 Este proyecto fue pensado como una herramienta de apoyo para la organización del aula. Permite ingresar un listado completo de estudiantes, seleccionar cuántos integrantes debe tener cada grupo y generar agrupamientos de manera aleatoria.
