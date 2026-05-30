@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de grupos | Grupos al azar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="logo-esquina">
+      <img src="img/grupos-aleatorios-logo.png" alt="Logo de estudiantes agrupados">
+    </div>
+
+    <h1>Generador de grupos</h1>
+    <p class="descripcion">Sistema de agrupamiento aleatorio.</p>
+
+    <div class="bloque-principal">
+      <div class="bloque">
+        <h2>LISTA DE ESTUDIANTES</h2>
+        <textarea 
+          id="estudiantes" 
+          placeholder="Ingresá un nombre por línea">
+        </textarea>
+      </div>
+
+      <div class="configuracion">
+        <h2>CONFIGURACIÓN</h2>
+
+        <label for="cantidadGrupo">Cantidad de integrantes por grupo</label>
+        <input 
+          type="number" 
+          id="cantidadGrupo" 
+          min="2" 
+          placeholder="Ej: 3"
+        />
+
+        <p class="ayuda">
+          Escribí todos los nombres en una sola lista y elegí de cuántos integrantes querés formar cada grupo.
+        </p>
+      </div>
+    </div>
+
+    <div class="botones">
+      <button onclick="generarGrupos()">GENERAR GRUPOS</button>
+      <button onclick="limpiarTodo()">LIMPIAR SISTEMA</button>
+    </div>
+
+    <div class="resultado">
+      <h2 class="titulo-resultado">RESULTADO DEL AGRUPAMIENTO</h2>
+      <div id="resultado">Esperando ejecución...</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

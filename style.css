@@ -1,0 +1,272 @@
+body {
+  font-family: Consolas, "Courier New", monospace;
+  background-color: #111111;
+  color: #f5f2e8;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: #181818;
+  padding: 25px;
+  padding-top: 90px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  border: 1px solid #2b2b2b;
+  position: relative;
+}
+
+.logo-esquina {
+  position: absolute;
+  top: 25px;
+  left: 55px;
+}
+
+.logo-esquina img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid #ea7a1a;
+  object-fit: cover;
+  background-color: #fff4d6;
+  padding: 6px;
+}
+
+h1 {
+  text-align: center;
+  color: #19ff6a;
+  font-size: 2.5rem;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  text-align: center;
+  color: #d6b08c;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #f08a24;
+  background-color: #201713;
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  border: 1px solid #8a4b16;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+
+h2:hover {
+  background-color: #2a1d17;
+  box-shadow: 0 0 10px rgba(240, 138, 36, 0.22);
+}
+
+.bloque-principal {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bloque {
+  flex: 2;
+  min-width: 300px;
+  background-color: #1a1d22;
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid #2c3138;
+}
+
+.configuracion {
+  flex: 1;
+  min-width: 240px;
+  background-color: #1a1d22;
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid #2c3138;
+}
+
+label {
+  display: block;
+  color: #d6b08c;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  height: 260px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #6b4a32;
+  border-radius: 10px;
+  resize: vertical;
+  box-sizing: border-box;
+  background-color: #141414;
+  color: #f5f2e8;
+  font-family: Consolas, "Courier New", monospace;
+}
+
+textarea::placeholder {
+  color: #b08968;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #6b4a32;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #141414;
+  color: #f5f2e8;
+  font-family: Consolas, "Courier New", monospace;
+}
+
+input::placeholder {
+  color: #b08968;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #19ff6a;
+  box-shadow: 0 0 8px rgba(25, 255, 106, 0.35);
+}
+
+.ayuda {
+  margin-top: 15px;
+  color: #d6b08c;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.botones {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ea7a1a;
+  color: #fff7ed;
+  font-family: Consolas, "Courier New", monospace;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #c96512;
+}
+
+.resultado {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #15181c;
+  border-radius: 12px;
+  border: 1px solid #2c3138;
+}
+
+.titulo-resultado {
+  text-align: center;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 12px auto;
+}
+
+#resultado p {
+  margin: 8px 0;
+  padding: 10px;
+  background-color: #2a211b;
+  border-radius: 8px;
+  border-left: 4px solid #ea7a1a;
+}
+
+#resultado .grupo {
+  margin-bottom: 14px;
+  padding: 12px;
+  background-color: #1d221f;
+  border-radius: 10px;
+  border-left: 4px solid #19ff6a;
+}
+
+#resultado .grupo strong {
+  color: #19ff6a;
+}
+
+#resultado .sobrantes {
+  border-left-color: #f08a24;
+  background-color: #2a211b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    padding-top: 30px;
+  }
+
+  .logo-esquina {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .logo-esquina img {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .descripcion {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .bloque-principal {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloque,
+  .configuracion {
+    min-width: unset;
+    width: 100%;
+  }
+
+  textarea {
+    height: 220px;
+    font-size: 15px;
+  }
+
+  .botones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
